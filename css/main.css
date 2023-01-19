@@ -529,6 +529,11 @@ address {
       flex-wrap: wrap;
   row-gap: 10px;
 }
+@media (max-width: 479px) {
+  .mobile-menu__network-list {
+    width: 240px;
+  }
+}
 .mobile-menu__network-link {
   font-size: 18px;
   line-height: 1.22;
