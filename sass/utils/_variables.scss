@@ -84,3 +84,7 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+
+body.modal-open {
+    overflow: hidden;
+}

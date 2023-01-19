@@ -57,6 +57,12 @@
         text-align: center;
         
         color: #757575;
+        
+        @include for-tablet-landscape-up-max {
+        
+            font-size: 12px;
+            line-height: 1.17;  
+        }
     
         &-input {
             appearance: none;

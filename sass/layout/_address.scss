@@ -25,13 +25,21 @@
         text-decoration: none;
     
         transition: color var(--transition-time) var(--timing-function);
+
+
     
         &:hover,
         &:focus {
             color: var(--accent-color);
         }
     }
-    &__item:not(:last-child) {
-        margin-bottom: 12px;
+    &__item {
+        @include for-tablet-landscape-up-max {
+            text-align: center;
+        } 
+        
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
     }
 } 

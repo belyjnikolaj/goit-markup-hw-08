@@ -1,5 +1,9 @@
 .section-works {
     padding-top: 0;
+    @include for-tablet-landscape-up-max {
+        display: none;
+        
+    }
 
     &__list {
         display: flex;   
