@@ -16,9 +16,6 @@
    @include for-tablet-landscape-up {
         display: none;
     }
-    // padding: 20px;
-    // text-align: center;
-    // font-size: 20px;
     
     &__close {
         position: absolute;
@@ -125,17 +122,7 @@
     }
     &__network-list {
         display: flex;
-        
-        
     }
-
-    // &__network-item {
-      
-    // }
-        
-    //     // &:first-child {
-    //     //     padding-left: -10px;
-    //     // }
        
         
     
@@ -162,17 +149,6 @@
             font-size: 14px;
             padding: 1px;
         }
-        
-        
-        // transform: rotate(90deg);
-        
-        // &:not(:last-child) {
-        //     border-right: 1px solid rgba(33, 33, 33, 0.2);
-        // }
-
-        // &:last-child {
-        //  border-right: none;
-        //     }
         &--last {
             padding-right: 0;
             border-right: none;
