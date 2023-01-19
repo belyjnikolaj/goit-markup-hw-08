@@ -624,16 +624,16 @@ address {
   border-color: var(--accent-color);
 }
 .form-field__checkbox {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
 }
-@media (max-width: 1199px) {
+@media screen and (min-width: 527px) {
   .form-field__checkbox {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 .form-field__checkbox-input {

@@ -51,17 +51,16 @@
         }
     }
     &__checkbox {
-        font-size: 14px;
-        line-height: 1.71;
+            font-size: 12px;
+            line-height: 1.17;
         letter-spacing: 0.03em;
         text-align: center;
         
         color: #757575;
         
-        @include for-tablet-landscape-up-max {
-        
-            font-size: 12px;
-            line-height: 1.17;  
+        @media screen and (min-width: 527px) {
+            font-size: 14px;
+        line-height: 1.71;
         }
     
         &-input {
