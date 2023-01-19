@@ -17,13 +17,14 @@
     } 
     
     &__tablet-container {
+        margin-bottom: 60px;
         @include for-tablet-landscape-up {
             display: flex;
             justify-content: space-around;
             align-items: baseline;
 
             width: 768px;
-            margin-bottom: 60px;
+            
         }
         @include for-desktop-up {
             justify-content: flex-start;
@@ -58,11 +59,7 @@
             color:var(--accent-text-color);
         }
     }
-    &__network {
-        @include for-tablet-portrait-up-max {
-            margin-bottom: 60px;
-        }
-    } 
+   
     &__network-title {
         font-weight: 700;
         font-size: 14px;

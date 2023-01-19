@@ -1,6 +1,6 @@
 .mobile-menu {
     position: fixed;
-    max-height: 796px;
+    
     width: 100%;
     height: 100%; 
     
@@ -37,11 +37,8 @@
         // background-color: transparent;
     }
     &.is-open {
-        
         transform: translateX(0);
     }
-    
-    
     &__content {
         display: flex;
         flex-direction: column;
@@ -66,6 +63,7 @@
         position: relative;
         
         display: inline-block;
+        font-weight: 500;
         font-size: 40px;
         line-height: 1.175;
         letter-spacing: 0.02em;
@@ -79,17 +77,6 @@
         }
         &--current {
             color: var(--accent-color);
-        }
-        &--current::after {
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            content: "";
-            height: 4px;
-            width: 100%;
-            background: #2196F3;
-            border-radius: 2px;
-            
         }
     }
     &__contact-list {
@@ -120,10 +107,9 @@
     }
     &__network-list {
         display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
-       
-        
-    
     &__network-link {
         
         font-size: 18px;
@@ -143,16 +129,21 @@
 
         border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-        @include for-phone-only {
-            font-size: 14px;
-            padding: 1px;
-        }
         &--last {
             padding-right: 0;
             border-right: none;
         }
         &--first {
             padding-left: 0;
+        }
+        @include for-phone-only {
+            &--wrap-last {
+                padding-right: 0;
+                border-right: none;
+            }
+            &--wrap-first {
+                padding-left: 0;
+            }
         }
        
     }

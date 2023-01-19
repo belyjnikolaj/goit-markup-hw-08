@@ -445,5 +445,67 @@
 			</div>
 		</div>
 	</footer>
+	<div class="mobile-menu js-menu-container">
+		<button class="mobile-menu__close js-close-menu" type="button">
+			<svg width="40" height="40">
+				<use class="menu-button__icon-cross" href="./images/icons.svg#icon-cross"></use>
+			</svg>
+		</button>
+		<div class="mobile-menu__content">
+			<div class="mobile-menu__list-box">
+				<ul class="mobile-menu__list list">
+					<li class="mobile-menu__item"><a href="./index.html"
+							class="mobile-menu__link  link">Студія</a></li>
+					<li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current link">Портфоліо</a>
+					</li>
+					<li class="mobile-menu__item"><a href="#" class="mobile-menu__link link">Контакти</a></li>
+				</ul>
+			</div>
+	
+			<div class="mobile-menu__connection">
+				<ul class="mobile-menu__contact-list list">
+					<li class="mobile-menu__contact-item">
+						<div class="mobile-menu__contact contact">
+							<a href="tel:+380961111111" class="mobile-menu__contact-tel link">
+								+38 096 111 11 11
+							</a>
+						</div>
+					</li>
+					<li class="mobile-menu__contact-item">
+						<div class="mobile-menu__contact contact">
+							<a href="mailto:info@devstudio.com" class="mobile-menu__contact-mail link">
+								info@devstudio.com
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="mobile-menu__network-list list">
+					<li mobile-menu__network-item><a class="mobile-menu__network-link mobile-menu__network-link--first"
+							href="#">Instagram</a></li>
+					<li mobile-menu__network-item><a class="mobile-menu__network-link" href="#">Twitter</a></li>
+					<li mobile-menu__network-item><a class="mobile-menu__network-link" href="#">Facebook</a></li>
+					<li mobile-menu__network-item><a class="mobile-menu__network-link mobile-menu__network-link--last"
+							href="#">LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./js/mobile-menu.js"></script>
+	<script src="./js/modal.js"></script>
+	<script>
+		(() => {
+			document
+				.querySelector('.js-speaker-form')
+				.addEventListener('submit', e => {
+					e.preventDefault();
+
+					new FormData(e.currentTarget).forEach((value, name) =>
+						console.log(`${name}: ${value}`),
+					);
+					e.currentTarget.reset();
+				});
+		})();
+	</script>
 </body>
 </html>
