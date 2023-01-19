@@ -471,10 +471,11 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   padding: 48px 40px;
 }
 .mobile-menu__list-box {
-  margin-bottom: 306px;
+  margin-bottom: auto;
 }
 .mobile-menu__item {
   display: block;
