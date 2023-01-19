@@ -1,0 +1,23 @@
+.section-team {
+    background-color: var(--secondary-bgc-color);
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    &__network-link {
+        fill: var(--primary-icons-color);
+        transition: background-color var(--transition-time) var(--timing-function), 
+            fill var(--transition-time) var(--timing-function);
+          
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            fill: var(--secondary-icons-color);
+        }
+    }
+}
+
+
+
+

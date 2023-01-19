@@ -1,0 +1,114 @@
+.footer {
+    background-color: var(--footer-bgc-color);
+    padding: 60px 0;
+
+    &__box {
+        display: flex;
+        align-items: baseline;
+    } 
+    &__contact {
+        margin-right: 70px;    
+    }
+    &__logo {    
+        display: inline-block;    
+        margin-bottom: 28px;
+        text-decoration: none;
+        
+        &-secondname {
+            color:var(--accent-text-color);
+        }
+    }
+    &__network-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1,14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--secondary-text-color);
+        margin-bottom: 20px;
+    } 
+    &__network-link {
+        fill: var(--secondary-icons-color);
+        background-color: rgba(255, 255, 255, 0.1);
+    
+        transition: background-color var(--transition-time) var(--timing-function), 
+            fill var(--transition-time) var(--timing-function);
+        
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            fill: var(--secondary-icons-color);
+        }
+    }
+    
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    &__form-box {
+        margin-left: auto;
+    }
+    &__form-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: var(--secondary-text-color);
+    }
+    &__field-input{
+        color: var(--secondary-text-color);
+        
+        height: 50px;
+        width: 358px; 
+        padding: 0 12px;  
+        outline: none;
+    
+        background-color: transparent;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        
+        width: 200px;
+        height: 50px;
+    
+        padding: 10px 28px;
+        margin: 0 auto; 
+        
+        border-radius: 4px;
+        border-color: transparent;
+        
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+        transition: background-color var(--transition-time) var(--timing-function);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--btnprimary-bgc-color);
+        }
+        &-title {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+        
+            color: var(--secondary-text-color);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.section-hero {
+    background-color: var(--hero-bgc-color);
+    color: var(--accent-text-color);
+    text-align: center;
+    padding: 200px 0px;
+
+    &__overlay {
+        width: 1600px;
+        margin: 0px auto;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        max-width: 696px;
+        color: var(--secondary-text-color);
+    
+        margin: 0px auto 34px;
+    }
+}

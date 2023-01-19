@@ -1,0 +1,32 @@
+.team-card {
+    width: 270px;
+    height: 428px;
+
+    background-color: var(--primary-bgc-color);
+    box-shadow: var(--card-shadow);   
+
+    &__member {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        margin-bottom: 10px;
+    }
+    &__position {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
+    
+        color: var(--title-text-color);
+    }
+    &__content {
+        padding: 32px;
+        border: var(--border-card);
+        border-top: none;
+    }
+}
+

@@ -1,0 +1,32 @@
+.feature-card {
+    
+    &__conteiner-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        border-radius: 4px;
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--secondary-bgc-color);
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: var(--title-text-color);
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        margin-bottom: 0;
+    }
+}

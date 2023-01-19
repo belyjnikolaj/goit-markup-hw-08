@@ -1,0 +1,26 @@
+.header {
+    color: var(--primary-text-color);
+    border-bottom: var(--border-header);
+
+    &__box,
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__menu {
+        display: flex;
+        margin-left: 93px;
+        gap: 50px;
+    }
+    
+    &__contact-list {
+        display: flex;
+        margin-left: auto;
+        gap: 40px;
+    }
+}
+
+
+
+

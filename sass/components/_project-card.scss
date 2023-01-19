@@ -1,0 +1,68 @@
+.project-card {
+    
+    &__link {
+        display: block;
+        text-decoration: none;
+    
+        transition: box-shadow var(--transition-time) var(--timing-function);
+        
+        &:hover,
+        &:focus {
+            box-shadow: var(--project-shadow);
+        }
+    }
+    &__box {
+        position: relative;
+        overflow: hidden;
+        width: 370px;
+        height: 294px;
+    }
+    &__thumb {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+    
+        transform: translateY(100%);
+        opacity: 1;
+        transition: transform var(--transition-time) var(--timing-function),
+            opacity var(--transition-time) var(--timing-function);
+    
+        .project-card__link:hover & {
+            transform: translateY(0);
+        }
+        &-text {
+            font-size: 18px;
+            line-height: 1.56;
+            letter-spacing: 0.03em;
+        
+            color: var(--secondary-text-color);
+            padding: 63px 24px;
+            margin: 0px;  
+        }
+    }
+    &__content {
+        padding: 20px 24px;
+        border: var(--border-card);
+        border-top: none; 
+    }
+    &__name {
+        color: var(--primary-text-color);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.00;
+        letter-spacing: 0.06em;
+    
+        margin-bottom: 4px;
+    }
+    &__type {
+        color: var(--title-text-color);
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em; 
+        
+        margin: 0;
+    }
+}
