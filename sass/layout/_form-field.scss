@@ -58,9 +58,9 @@
         
         color: #757575;
         
-        @media screen and (min-width: 527px) {
+        @include for-desktop-up {
             font-size: 14px;
-        line-height: 1.71;
+            line-height: 1.71;
         }
     
         &-input {
