@@ -265,20 +265,39 @@
 				<h2 class="section__title">Наша команда</h2>
 				<ul class="section-team__list list">
 					<li class="section-team__item">
-						<div class="team-card">						
-							<img class="team-card__img" 
-								srcset="
-									./images/foto/img.jpg 1x, 
-									./images/foto/img@2x.jpg 2x, 
-									./images/foto/mobile.jpg 1x, 
-									./images/foto/mobile@2x.jpg 2x, 
-									./images/foto/tablet.jpg 1x, 
-									./images/foto/tablet@2x.jpg 2x
-								"
-								src="./images/foto/img.jpg" 
-								alt="Усміхнений хлопець з бородою, в окулярах та в коричневій сорочці"
-								width="270"
-							/>
+						<div class="team-card">	
+							<picture>
+								<source
+									srcset=" 
+										./images/foto/mobile.jpg 1x, 
+										./images/foto/mobile@2x.jpg 2x
+									"
+									media="(max-width: 767px)"
+									type="image/jpeg"
+								/>
+								<source 
+									srcset=" 
+										./images/foto/tablet.jpg 1x, 
+										./images/foto/tablet@2x.jpg 2x
+									" 
+									media="(min-width: 768px)" 
+									type="image/jpeg"
+								/>
+								<source 
+									srcset=" 
+										./images/foto/img.jpg 1x, 
+										./images/foto/img@2x.jpg 2x
+									" 
+									media="(min-width: 1200px)" 
+									type="image/jpeg"
+								/>
+								<img 
+									class="team-card__img"
+									src="./images/foto/img.jpg"
+									alt="Усміхнений хлопець з бородою, в окулярах та в коричневій сорочці"
+									
+								/>
+							</picture>
 							<div class="team-card__content">
 								<h3 class="team-card__member">Ігор Дем'яненко</h3>
 								<p lang="en" class="team-card__position">Product Designer</p>
@@ -319,19 +338,37 @@
 					</li>
 					<li class="section-team__item">
 						<div class="team-card">
-							<img class="team-card__img"
-								srcset="
-									./images/foto/img1.jpg 1x,
-									./images/foto/img1@2x.jpg 2x,
-									./images/foto/mobile1.jpg 1x,
-									./images/foto/mobile1@2x.jpg 2x,
-									./images/foto/tablet1.jpg 1x,
-									./images/foto/tablet1@2x.jpg 2x
-								"
-								src="./images/foto/img1.jpg" 
-								alt="Усміхнена дівчина з білявим довгим волоссям, в окулярах та в чорному піджаку" 
-								width="270"
-							/>
+							<picture>
+								<source 
+									srcset=" 
+										./images/foto/mobile1.jpg 1x, 
+										./images/foto/mobile1@2x.jpg 2x
+									" 
+									media="(max-width: 767px)" 
+									type="image/jpeg" 
+								/>
+								<source 
+									srcset=" 
+										./images/foto/tablet1.jpg 1x, 
+										./images/foto/tablet1@2x.jpg 2x
+									" 
+									media="(min-width: 768px)" 
+									type="image/jpeg" 
+								/>
+								<source 
+									srcset=" 
+										./images/foto/img1.jpg 1x, 
+									./images/foto/img1@2x.jpg 2x
+									" 
+									media="(min-width: 1200px)" 
+									type="image/jpeg" 
+								/>
+								<img 
+									class="team-card__img" 
+									src="./images/foto/img1.jpg"
+									alt="Усміхнена дівчина з білявим довгим волоссям, в окулярах та в чорному піджаку" 
+								/>
+							</picture>
 							<div class="team-card__content">	
 								<h3 class="team-card__member">Ольга Рєпіна</h3>
 								<p lang="en" class="team-card__position">Frontend Developer</p>
@@ -372,19 +409,37 @@
 					</li>
 					<li class="section-team__item">
 						<div class="team-card">
-							<img class="team-card__img"
-								srcset="
-									./images/foto/img2.jpg 1x,
-									./images/foto/img2@2x.jpg 2x,
-									./images/foto/mobile2.jpg 1x,
-									./images/foto/mobile2@2x.jpg 2x,
-									./images/foto/tablet2.jpg 1x,
-									./images/foto/tablet2@2x.jpg 2x
-								"
-								src="./images/foto/img2.jpg" 
-								alt="Усміхнений хлопець в сірій сорочці" 
-								width="270"
-							/>
+							<picture>
+								<source 
+									srcset=" 
+										./images/foto/mobile2.jpg 1x, 
+										./images/foto/mobile2@2x.jpg 2x
+									" 
+									media="(max-width: 767px)" 
+									type="image/jpeg" 
+								/>
+								<source 
+									srcset=" 
+										./images/foto/tablet2.jpg 1x, 
+										./images/foto/tablet2@2x.jpg 2x
+									" 
+									media="(min-width: 768px)" 
+									type="image/jpeg" 
+								/>
+								<source 
+									srcset=" 
+										./images/foto/img2.jpg 1x, 
+										./images/foto/img2@2x.jpg 2x
+									" 
+									media="(min-width: 1200px)" 
+									type="image/jpeg" 
+								/>
+								<img 
+									class="team-card__img" 
+									src="./images/foto/img2.jpg"
+									alt="Усміхнений хлопець в сірій сорочці" 
+								/>
+							</picture>
 							<div class="team-card__content">	
 								<h3 class="team-card__member">Микола Тарасов</h3>
 								<p lang="en" class="team-card__position">Marketing</p>
@@ -425,19 +480,38 @@
 					</li>
 					<li class="section-team__item">
 						<div class="team-card">
-							<img class="team-card__img"
-								srcset="
-									./images/foto/img3.jpg 1x,
-									./images/foto/img3@2x.jpg 2x,
-									./images/foto/mobile3.jpg 1x,
-									./images/foto/mobile3@2x.jpg 2x,
-									./images/foto/tablet3.jpg 1x,
-									./images/foto/tablet3@2x.jpg 2x
-								"
-								src="./images/foto/img3.jpg"
-								alt="Усміхнений хлопець з бородою, в окулярах та в чорній футболці"
-								width="270"
-							/>
+							<picture>
+								<source 
+									srcset=" 
+										./images/foto/mobile3.jpg 1x, 
+										./images/foto/mobile3@2x.jpg 2x
+									" 
+									media="(max-width: 767px)" 
+									type="image/jpeg" 
+								/>
+								<source 
+									srcset=" 
+										./images/foto/tablet3.jpg 1x, 
+										./images/foto/tablet3@2x.jpg 2x
+									" 
+									media="(min-width: 768px)" 
+									type="image/jpeg" 
+								/>
+								<source 
+									srcset=" 
+										./images/foto/img3.jpg 1x, 
+										./images/foto/img3@2x.jpg 2x
+									" 
+									media="(min-width: 1200px)" 
+									type="image/jpeg" 
+								/>
+								<img 
+									class="team-card__img" 
+									src="./images/foto/img3.jpg" 
+									alt="Усміхнений хлопець з бородою, в окулярах та в чорній футболці" 
+									 
+								/>
+							</picture>
 							<div class="team-card__content">
 								<h3 class="team-card__member">Михайло Єрмаков</h3>
 								<p lang="en" class="team-card__position">UI Designer</p>
@@ -647,19 +721,15 @@
 			
 			<div class="mobile-menu__connection">
 				<ul class="mobile-menu__contact-list list">
-					<li class="mobile-menu__contact-item">
-						<div class="mobile-menu__contact contact">
-							<a href="tel:+380961111111" class="mobile-menu__contact-tel link">
-								+38 096 111 11 11
-							</a>
-						</div>
+					<li class="mobile-menu__contact-item contact">
+						<a href="tel:+380961111111" class="mobile-menu__contact-tel link">
+							+38 096 111 11 11
+						</a>
 					</li>
-					<li class="mobile-menu__contact-item">
-						<div class="mobile-menu__contact contact">	
-							<a href="mailto:info@devstudio.com" class="mobile-menu__contact-mail link">
-								info@devstudio.com
-							</a>
-						</div>
+					<li class="mobile-menu__contact-item contact">
+						<a href="mailto:info@devstudio.com" class="mobile-menu__contact-mail link">
+							info@devstudio.com
+						</a>
 					</li>
 				</ul>
 				<ul class="mobile-menu__network-list list">

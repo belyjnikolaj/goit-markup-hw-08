@@ -44,6 +44,7 @@
         
     }
     &__thumb {
+        
         position: absolute;
         top: 0;
         bottom: 0;
@@ -68,9 +69,11 @@
             padding: 63px  24px;
         }
             
-        .project-card__link:hover & {
+        .project-card__link:hover &,
+        .project-card__link:focus & {
             transform: translateY(0);
         }
+        
         &-text {
            
 
@@ -96,6 +99,7 @@
     }
     &__img {
         width: 100%;
+        
         display: block;
     }
     &__content {

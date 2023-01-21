@@ -45,12 +45,22 @@
         
         &-mail--small {
             width: 14px;
-            height: 10px
+            height: 10px;
+            
+            @include for-desktop-up {
+                width: 16px;
+                height: 12px;
+            }
         }
+
         &-phone--small {
             width: 10px;
-            height: 14px
+            height: 14px;
+            
+            @include for-desktop-up {
+                width: 10px;
+                height: 16px;
+            }
         }
-        
     }
 }

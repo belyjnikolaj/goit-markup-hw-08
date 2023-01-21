@@ -54,6 +54,7 @@
         display: block;
         margin-bottom: 32px;
         
+        
     }
     &__item:last-child {
         margin-bottom: 0;
@@ -82,11 +83,14 @@
     &__contact-list {
         margin-bottom: 64px;
     }
+    &__contact-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
     &__contact-tel {
         font-size: 34px;
         line-height: 1.18;
         letter-spacing: 0.02em;
-        margin-bottom: 32px;
+        
         
         display: inline-block;
         color: #2196F3;

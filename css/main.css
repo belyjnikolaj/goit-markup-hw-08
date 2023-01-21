@@ -389,9 +389,21 @@ address {
   width: 14px;
   height: 10px;
 }
+@media (min-width: 1200px) {
+  .contact__icon-mail--small {
+    width: 16px;
+    height: 12px;
+  }
+}
 .contact__icon-phone--small {
   width: 10px;
   height: 14px;
+}
+@media (min-width: 1200px) {
+  .contact__icon-phone--small {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .menu__link {
@@ -501,11 +513,13 @@ address {
 .mobile-menu__contact-list {
   margin-bottom: 64px;
 }
+.mobile-menu__contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
 .mobile-menu__contact-tel {
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
   display: inline-block;
   color: #2196F3;
 }
@@ -1761,7 +1775,7 @@ address {
     padding: 63px 24px;
   }
 }
-.project-card__link:hover .project-card__thumb {
+.project-card__link:hover .project-card__thumb, .project-card__link:focus .project-card__thumb {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
